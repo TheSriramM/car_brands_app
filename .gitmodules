@@ -1,0 +1,3 @@
+[submodule "car_brands_db"]
+	path = car_brands_db
+	url = https://github.com/TheSriramM/car_brands_db

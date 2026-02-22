@@ -1,4 +1,17 @@
 {% extends "layout.html" %}
 {% block body %}
 <!--Block body-->
+<div class="three-columns">
+    {% for brand in results %}
+
+    <a href="{{ url_for('brand', brand_id=brand[0]) }}">
+        <div class="w3-card-4">
+            <!--Layout of each brand-->
+            <h1>{{ brand[1] }}</h1>
+            <img src="{{ brand[6] }}" alt="{{brand[1]}}">
+        </div>
+    </a>
+
+    {% endfor %}
+</div>
 {% endblock %}
